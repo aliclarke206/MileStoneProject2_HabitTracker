@@ -8,6 +8,7 @@
 * creates a visual que that reminds you to act.
 * Satisfying to record success and not break the streak.
 * Extra points for habit stacking. 
+* Easy to use on desktop and mobile.
 
 ## Features
 
@@ -18,6 +19,8 @@
 ## Technologies Used
 
 ## Testing
+
+* Clicking on habit checks the check box which helps for mobile device use. 
 
 ## Deployment
 
