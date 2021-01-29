@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script defer src="script.js"></script>
 </head>
 <body>
     
@@ -17,14 +18,14 @@
         <div class="row">
     <div class="col-md-4 habit-categories">
         <h2 class="habit-category-title">Habit Type</h2>
-        <ul class="habit-type-list">
-            <li class="active-list">Wellbeing</li>
-            <li>Work</li>
-            <li>Chores</li>
-            <li>Health and Exercise</li>
+        <ul class="habit-type-list" data-lists>
+            <li class="active-list list-name">Wellbeing</li>
+            <li class="list-name">Work</li>
+            <li class="list-name">Chores</li>
+            <li class="list-name">Health and Exercise</li>
         </ul>
 
-        <form action=""><input type="text" class="new-category" placeholder="New Habit Type" aria-label="New Habit Type"></form>
+        <form action="" data-new-list-form><input type="text" class="new-category" data-new-list-input placeholder="New Habit Type" aria-label="New Habit Type"></form>
 
         <button class="btn btn-list" aria-label="Create New Type">+</button>
     </div>
