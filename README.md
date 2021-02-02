@@ -22,6 +22,9 @@
 
 * Clicking on habit checks the check box which helps for mobile device use. 
 
+#### Bugs
+* 
+
 ## Deployment
 
 ## Credits
