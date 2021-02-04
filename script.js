@@ -11,7 +11,7 @@ const taskTemplate = document.getElementById("task-template");
 const newTaskForm = document.querySelector('[data-new-task-form]');
 const newTaskInput = document.querySelector('[data-new-task-input]');
 const clearCompleteTasksButton = document.querySelector('[data-clear-complete-task-button]');
-//const percentage = document.querySelector(".percentage");
+const number = document.querySelector(".number");
 
 const LOCAL_STORAGE_LIST_KEY = 'task.lists';
 const LOCAL_STORAGE_SELECTED_LIST_ID_KEY = 'task.selectedListId';
@@ -148,14 +148,15 @@ function clearElement(element) {
 }
 
 render()
+// progress Circle
 
-//const number = document.querySelector(".number");
-//et counter = 0;
-//setInterval(() => {
-    //if(counter == 100){
-        //clearInterval();
-    //}else{
-        //counter += 1;
-       // number.textContent = counter + "%"
-    //}
-//}, 80);
+let counter = 0;
+
+setInterval(() => {
+    if(counter == 100){
+        clearInterval();
+    }else{
+        counter += 1;
+       number.textContent = counter + "%"
+    }
+}, 80);
