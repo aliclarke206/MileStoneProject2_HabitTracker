@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     font-family: "Work Sans", sans-serif;
@@ -232,18 +233,37 @@ form {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -35px;
     color: rgb(6, 45, 58);
 }
-
-.outer {
-    border: 1px solid black;
-    width: 90%;
-    height: 20px;
+/*Progress Circle*/
+.progress-circle {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    height: 100%;
+    text-align: center;
+    place-items: center;
+    background: #dde6f0;
 }
 
-.inner {
-    width: 50%;
-    height: 100%;
-    background: blue;
+.circular {
+    height: 100px;
+    width: 100px;
+    background: red;
+    position: relative;
+    transform: scale(2);
+}
+
+.circular .inner {
+    position: absolute;
+    z-index: 6;
+    top:50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background: #dde6f0;
+    border-radius: 100%;
+    box-shadow: 0 1px 0 rgb(0,0,0,0.2);
 }
