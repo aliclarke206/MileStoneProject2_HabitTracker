@@ -25,7 +25,7 @@ listsContainer.addEventListener('click', e => {
     selectedListId = e.target.dataset.listId
     saveAndRender()
   }
-})
+}) 
 
 tasksContainer.addEventListener('click', e => {
     if (e.target.tagName.toLowerCase() === 'input') {
@@ -39,7 +39,7 @@ tasksContainer.addEventListener('click', e => {
 
 clearCompleteTasksButton.addEventListener('click', _e => {
     const selectedList = lists.find(list => list.id === selectedListId)
-    selectedList.tasks = selectedList.tasks.filter(task !=task.complete)
+    selectedList.tasks = selectedList.tasks.filter(task => !task.complete)
     saveAndRender()
 })
 
@@ -101,14 +101,14 @@ function render() {
     } else {
         listDisplayContainer.style.display = ''
         listTitleElement.innerText = selectedList.name
-        renderTaskCount()
+        renderTaskCount(selectedList)
         clearElement(tasksContainer)
         renderTasks(selectedList)
     }
 
     function renderTasks (selectedList) {
         selectedList.tasks.forEach(task => {
-            const taskElement = document.importNode(taskElement.content, true)
+            const taskElement = document.importNode(taskTemplate.content, true)
             const checkbox = document.querySelector("input")
             checkbox.id = task.id
             checkbox.checked = task.complete
@@ -148,6 +148,7 @@ function clearElement(element) {
 }
 
 render()
+
 // progress Circle
 
 let counter = 0;
