@@ -16,7 +16,7 @@ body {
 
 .title {
     text-align: center;
-    font-size: calc(7vw + 2rem);
+    font-size: 6.5rem;
     font-weight: 900;
     letter-spacing: 1px;
     margin: -0.2em, 0 0.5em ;
@@ -238,13 +238,13 @@ form {
 /*Progress Circle*/
 .progress-circle {
     margin: 0;
-    padding: 0;
+    padding-top: 30px;
     box-sizing: border-box;
     display: grid;
     height: 100%;
     text-align: center;
     place-items: center;
-    background: #dde6f0;
+    background: none;
 }
 
 .circular {

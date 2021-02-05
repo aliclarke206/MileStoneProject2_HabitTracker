@@ -29,8 +29,8 @@ listsContainer.addEventListener('click', e => {
 
 tasksContainer.addEventListener('click', e => {
     if (e.target.tagName.toLowerCase() === 'input') {
-        const selectedList = lists.find(list => list.id === selectedListId)
-        const selectedTask = selectedList.tasks.find(task => task.id === e.target.id)
+        const selectedList = lists.find(list => list.id == selectedListId)
+        const selectedTask = selectedList.tasks.find(task => task.id == e.target.id)
         selectedTask.complete = e.target.checked
         save()
         renderTaskCount(selectedList)
@@ -66,7 +66,7 @@ newTaskForm.addEventListener('submit', e => {
   if (taskName == null || taskName === '') return
   const task = createTask(taskName)
   newTaskInput.value = null
-  const selectedList = lists.find(list => list.id === selectedListId)
+  const selectedList = lists.find(list => list.id == selectedListId)
   selectedList.tasks.push(task)
   saveAndRender()
 })
@@ -95,7 +95,7 @@ function render() {
     clearElement(listsContainer);
     renderLists();
 
-    const selectedList = lists.find( list => list.id === selectedListId)
+    const selectedList = lists.find( list => list.id == selectedListId)
     if (selectedListId === null) {
         listDisplayContainer.style.display = "none"
     } else {
@@ -112,20 +112,19 @@ function render() {
             const checkbox = taskElement.querySelector("input")
             checkbox.id = task.id
             checkbox.checked = task.complete
-            const label =  document.querySelector("label")
+            const label =  taskElement.querySelector("label")
             label.htmlFor = task.id
             label.append(task.name)
             tasksContainer.appendChild(taskElement)
         })
     }
-
-    function renderTaskCount (selectedList){
+    
+}
+function renderTaskCount (selectedList){
         const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
         const taskString = incompleteTaskCount === 1 ? "habit" : "habits"
         listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`
     }
-    
-}
 
 function renderLists () {
     lists.forEach(list => {
@@ -157,7 +156,7 @@ setInterval(() => {
     if(counter == 100){
         clearInterval();
     }else{
-        counter += 1;
+       counter += 1;
        number.textContent = counter + "%"
-    }
+   }
 }, 80);
