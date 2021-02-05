@@ -25,7 +25,7 @@ listsContainer.addEventListener('click', e => {
     selectedListId = e.target.dataset.listId
     saveAndRender()
   }
-}) 
+})   
 
 tasksContainer.addEventListener('click', e => {
     if (e.target.tagName.toLowerCase() === 'input') {
@@ -109,7 +109,7 @@ function render() {
     function renderTasks (selectedList) {
         selectedList.tasks.forEach(task => {
             const taskElement = document.importNode(taskTemplate.content, true)
-            const checkbox = document.querySelector("input")
+            const checkbox = taskElement.querySelector("input")
             checkbox.id = task.id
             checkbox.checked = task.complete
             const label =  document.querySelector("label")
