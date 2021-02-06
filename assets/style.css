@@ -44,7 +44,9 @@ body {
 
 form {
     display: flex;
+
 }
+
 
 .btn {
     cursor: pointer;
@@ -235,7 +237,7 @@ form {
 .delete-habit {
     display: flex;
     justify-content: space-evenly;
-    position: absolute;
+    padding: 20px;
     width: 100%;
     left: 0;
     color: rgb(6, 45, 58);
