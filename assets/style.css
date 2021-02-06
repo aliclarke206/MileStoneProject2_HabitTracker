@@ -119,13 +119,13 @@ form {
 .habit-list {
     --spacer: 2rem;
     display: inline-block;
-    padding-left: 40px;
     background: lightcyan;
     color: black;
 }
 
 .habit-header {
     background: lightgrey;
+    width: 100%;
     padding: var(--spacer);
     display: flex;
     align-items: center;
