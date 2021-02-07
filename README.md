@@ -1,3 +1,11 @@
+# MileStone Project Two
+## Task Tracker
+
+In today's world there are ususally a million and one things going on in a given day. It's sometimes difficult to keep track 
+of all the tasks and errands that need to be completed resulting in somethings not getting done or forgotten. Having one 
+place to check for reference, track and store these daily tasks is an extremely help full resource. 
+
+This project is a simple and responsive design which is super user friendly. It allows the user to break down their daily tasks into sections or categories of their choice, for example, work, study or exercise. Within in these categories their tasks are broken down and automatically tracked once a task is completed and displayed conveniently in a progress bar. 
 ### Buiness Goals
 ### Customer Goals
 
