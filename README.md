@@ -6,20 +6,21 @@ of all the tasks and errands that need to be completed resulting in somethings n
 place to check for reference, track and store these daily tasks is an extremely help full resource. 
 
 This project is a simple and responsive design which is super user friendly. It allows the user to break down their daily tasks into sections or categories of their choice, for example, work, study or exercise. Within in these categories their tasks are broken down and automatically tracked once a task is completed and displayed conveniently in a progress bar. 
-### Buiness Goals
-### Customer Goals
 
 ## Ux
 **User Stories**
-* A place to track and store habits.
-* Able to view progress over time.
-* Able to add and remove habits.
-* Monitoring how you're doing over time.
-* Simplifies big changes into smaller actions that compund over time. 
-* creates a visual que that reminds you to act.
-* Satisfying to record success and not break the streak.
-* Extra points for habit stacking. 
+As a user of this application: 
+
+* I would like one place to track and store daily tasks.
+* An ability to view sub categories and broken down tasks within these categories.
+* Ability to add and remove tasks.
+* Ability to check off when cpomplete.
+* Monitoring of the progression of completed tasks.
+* Simplifies big tasks into smaller actions that compund over time. 
+* Creates a visual cue that reminds you to act.
+* Satisfying to record progress and not break the streak. 
 * Easy to use on desktop and mobile.
+* Simple design with no complicated format. 
 
 ### Strategy
 
@@ -39,6 +40,7 @@ Wireframes
 
 ### Features Left to Implement
 
+* Adding a calender feature API to link with google calander so appointments automatically link to tasks. 
 ## Technologies Used
 
 CSS programming language
