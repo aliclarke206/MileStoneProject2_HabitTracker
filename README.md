@@ -35,12 +35,23 @@ Wireframes
 ### Surface
 
 ## Features
-
 ### Existing Features
+* Easy, simple design to allow for seamless navigation.
+* Task category section to break tasks down into separate headings.
+* Ability to customize category section into headings of your own choice with as many categories as you need.
+* Categories can be deleted using the delete category button and added using the “add new category “text box.
+* When a particular category is selected, the selected category is highlighted and the corresponding task list is shown on the right hand side of the desktop or below on a smaller device.
+* The task list can also be modified as the user likes by adding and checking off completed tasks as they go. 
+* There is a clear completed task button below the task list so the user can clear them out of the list as they go. 
+* On the right had corner of the task list there is also a task counter. This also changes responsively to the amount of tasks still remaining to be completed within the category. 
+* There is also a responsive progress bar that correlates with the amount of tasks remaining within the task list to give the user a visual cue of how many tasks have been completed. 
 
 ### Features Left to Implement
 
 * Adding a calender feature API to link with google calander so appointments automatically link to tasks. 
+* Along with the calender tasks could then be integrated with a times of the day tasks need to be completed so the day could be better planned out.
+* For a mobile app, reminder notifications could also be installed to pop up if tasks were due to be completed at a certain time.
+* An ability to add links to other apps. For example, if 10,000 steps was a task to be completed, there would be an option to link your FitBit account to allow for seamless and automatic task completion without having to manually check it off. 
 ## Technologies Used
 
 CSS programming language
