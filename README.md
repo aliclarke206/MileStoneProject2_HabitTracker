@@ -45,6 +45,7 @@ Wireframes
 * There is a clear completed task button below the task list so the user can clear them out of the list as they go. 
 * On the right had corner of the task list there is also a task counter. This also changes responsively to the amount of tasks still remaining to be completed within the category. 
 * There is also a responsive progress bar that correlates with the amount of tasks remaining within the task list to give the user a visual cue of how many tasks have been completed. 
+* The categories, tasks, checked and unchecked tasks are stored in local storage so when the user reloads the page their tasks are still there.
 
 ### Features Left to Implement
 
