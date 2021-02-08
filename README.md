@@ -40,12 +40,16 @@ The specifications and requirements for the site to adhere to the user stories i
 
 
 ### Structure
-The structure of the site was designed in such a way that everything should be visible on the one page. There is no need to navigate away from the page and all the information is visible all together. To ensure not to overload the user with all the tasks at once, the corresponding tasks linked to the category are displayed responsively. Once the user clicks on a category the corresponding task list changes.  This interaction design makes it very easy for the user to navigate through their category lists and task lists. 
+To ensure not to overload the user with all the tasks at once, the corresponding tasks linked to the category are displayed responsively. Once the user clicks on a category the corresponding task list changes.  This interaction design makes it very easy for the user to navigate through their category lists and corresponding task lists. 
+All the data is stored in local storage so when the user goes back to the page the completed and uncompleted tasks are still there along with the categories they fall under.
 
 ### Skeleton
+The structure of the site was designed in such a way that everything should be visible on the one page. There is no need to navigate away from the page and all the information is visible all together. The categories list is arranged on the left hand side in a smaller box and when clicked the corresponding task box appears on the right in a larger box. This is to accommodate left to right design and also as there typically would be more tasks than categories, the bigger task box allows for the larger task list to be seen clearer. 
+The structure mock ups were roughly done on [Balsamiq WireFrames](https://balsamiq.com/) . 
 
-Wireframes
+![Desktop-view](assets/images/desktop-view.png)
 
+![Mobile-view](assets/images/mobile-view.png)
 ### Surface
 
 ## Features
