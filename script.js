@@ -34,6 +34,7 @@ tasksContainer.addEventListener('click', e => {
         selectedTask.complete = e.target.checked
         save()
         renderTaskCount(selectedList)
+        
     }
 })
 
@@ -147,7 +148,7 @@ function clearElement(element) {
 
 }
 
-render()
+
 
 
 const selectedList = lists.find( list => list.id == selectedListId);
@@ -186,3 +187,5 @@ class ProgressBar {
 }
 
 new ProgressBar(document.querySelector(".progress-bar"), progressPercent);
+
+render()
