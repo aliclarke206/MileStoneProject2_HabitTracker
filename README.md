@@ -8,6 +8,10 @@ place to check for reference, track and store these daily tasks is an extremely 
 This project is a simple and responsive design which is super user friendly. It allows the user to break down their daily tasks into sections or categories of their choice, for example, work, study or exercise. Within in these categories their tasks are broken down and automatically tracked once a task is completed and displayed conveniently in a progress bar. 
 
 ## Ux
+### Strategy
+
+The basic strategy behind this application was to build a simple and easy to navigate site where all the daily tasks are stored in one place. It’s broken down into different categories to allow the user to amend to different lists and segregate tasks so all the tasks within one list are relevant to one another. It allows for better organisation of daily tasks. 
+
 **User Stories**
 As a user of this application: 
 
@@ -22,7 +26,6 @@ As a user of this application:
 * Easy to use on desktop and mobile.
 * Simple design with no complicated format. 
 
-### Strategy
 
 ### Scope
 
