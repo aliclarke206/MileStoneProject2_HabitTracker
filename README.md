@@ -40,6 +40,7 @@ The specifications and requirements for the site to adhere to the user stories i
 
 
 ### Structure
+The structure of the site was designed in such a way that everything should be visible on the one page. There is no need to navigate away from the page and all the information is visible all together. To ensure not to overload the user with all the tasks at once, the corresponding tasks linked to the category are displayed responsively. Once the user clicks on a category the corresponding task list changes.  This interaction design makes it very easy for the user to navigate through their category lists and task lists. 
 
 ### Skeleton
 
