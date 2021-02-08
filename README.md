@@ -10,7 +10,8 @@ This project is a simple and responsive design which is super user friendly. It 
 ## Ux
 ### Strategy
 
-The basic strategy behind this application was to build a simple and easy to navigate site where all the daily tasks are stored in one place. It’s broken down into different categories to allow the user to amend to different lists and segregate tasks so all the tasks within one list are relevant to one another. It allows for better organisation of daily tasks. 
+The basic strategy behind this application was to build a simple and easy to navigate site where all the daily tasks are stored in one place. It’s broken down into different categories to allow the user to amend to different lists and segregate tasks so all the tasks within one list are relevant to one another. It allows for better organisation of daily tasks.
+The objectives behind building the site were to create a single place where users could come to track and organise their daily tasks and habits.
 
 **User Stories**
 As a user of this application: 
@@ -28,6 +29,15 @@ As a user of this application:
 
 
 ### Scope
+The specifications and requirements for the site to adhere to the user stories include:
+* A form to easily create new task categories
+* A form to easily add new tasks to associated category
+* A checkbox to check and uncheck completed tasks
+* A button to clear completed tasks
+* A button to clear a category
+* A responsive counter to display tasks remaining
+* A progress bar to display progression of tasks completed
+
 
 ### Structure
 
