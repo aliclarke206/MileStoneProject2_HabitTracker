@@ -104,6 +104,7 @@ function render() {
         renderTaskCount(selectedList)
         clearElement(tasksContainer)
         renderTasks(selectedList)
+        
     }
 
     function renderTasks (selectedList) {
@@ -148,37 +149,40 @@ function clearElement(element) {
 
 render()
 
-// progress Circle 1
 
-let counter = 0;
+const selectedList = lists.find( list => list.id == selectedListId);
+ const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length;
+ const completeTaskCount = selectedList.tasks.filter(task => task.complete).length;
+ const totalTaskCount = (selectedList.tasks.filter(task => !task.complete).length) + (selectedList.tasks.filter(task => task.complete).length);
+const progressPercent = Math.round((completeTaskCount/totalTaskCount)*100);
 
-setInterval(() => {
-    if(counter == 100){
-        clearInterval();
-    }else{
-       counter += 1;
-       number.textContent = counter + "%"
-   }
-}, 80);
+class ProgressBar {
+    constructor (element, initialValue = 0){
+        this.valueElem = element.querySelector(".progress-bar-value");
+        this.fillElem = element.querySelector(".progress-bar-fill");
 
-// Progress bar two
-var i = 0;
-function move() {
-  if (i == 0) {
-    i = 1;
-    var elem = document.getElementById("myBar");
-    var width = 40;
-    var id = setInterval(frame, 40);
-    function frame() {
-      if (width >= 100) {
-        clearInterval(id);
-        i = 0;
-      } else {
-        width++;
-        elem.style.width = width + "%";
-        elem.innerHTML = width + "%";
-      }
+        this.setValue(initialValue);
     }
-  }
+
+    setValue (newValue) {
+        if(newValue < 0){
+            newValue = 0;
+        }
+
+        if(newValue > 100) {
+            newValue = 100;
+        }
+
+        this.value = newValue
+        this.update();
+    }
+
+    update (){
+        const percentage = this.value + "%";
+
+        this.fillElem.style.width = percentage;
+        this.valueElem.textContent = percentage;
+    }
 }
 
+new ProgressBar(document.querySelector(".progress-bar"), progressPercent);

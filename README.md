@@ -50,7 +50,11 @@ The structure mock ups were roughly done on [Balsamiq WireFrames](https://balsam
 ![Desktop-view](assets/images/desktop-view.png)
 
 ![Mobile-view](assets/images/mobile-view.png)
+
+
 ### Surface
+The surface of the site should be clean and simple. As the content is all on one page it should not be overloaded with graphics and animations. Easy to follow and neutral colours as bright colours can come across alarming especially if there are many tasks appearing on the screen. 
+
 
 ## Features
 ### Existing Features
