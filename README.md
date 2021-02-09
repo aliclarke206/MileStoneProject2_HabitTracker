@@ -107,6 +107,7 @@ The HTML was checked using the
 The CSS was checked using the 
 
 * Clicking on habit checks the check box which helps for mobile device use. 
+* Task changes to tasks plural when task count goes above 1. 
 
 #### Bugs
 * 

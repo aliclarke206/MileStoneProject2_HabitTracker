@@ -34,6 +34,7 @@ tasksContainer.addEventListener('click', e => {
         selectedTask.complete = e.target.checked
         save()
         renderTaskCount(selectedList)
+        taskProgressBar.setValue(progressPercent);
         
     }
 })
@@ -105,6 +106,7 @@ function render() {
         renderTaskCount(selectedList)
         clearElement(tasksContainer)
         renderTasks(selectedList)
+        taskProgressBar.setValue(progressPercent);
         
     }
 
@@ -124,8 +126,9 @@ function render() {
 }
 function renderTaskCount (selectedList){
         const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
-        const taskString = incompleteTaskCount === 1 ? "habit" : "habits"
+        const taskString = incompleteTaskCount === 1 ? "task" : "tasks"
         listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`
+        taskProgressBar.setValue(progressPercent);
     }
 
 function renderLists () {
@@ -147,9 +150,6 @@ function clearElement(element) {
     }
 
 }
-
-
-
 
 const selectedList = lists.find( list => list.id == selectedListId);
  const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length;
@@ -186,6 +186,6 @@ class ProgressBar {
     }
 }
 
-new ProgressBar(document.querySelector(".progress-bar"), progressPercent);
+let taskProgressBar = new ProgressBar(document.querySelector(".progress-bar"), progressPercent);
 
 render()
