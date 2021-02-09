@@ -20,22 +20,24 @@ body {
 
 }
 
+/*Header*/
+
 .title {
     text-align: center;
     font-size: 6.5rem;
     font-weight: 900;
     letter-spacing: 1px;
-    margin: -0.2em, 0 0.5em ;
+    margin: -0.2em 0 0.5em ;
 }
 
-.habit-type-list {
+.task-type-list {
     font-size: 1.2rem;
     line-height: 1.7;
     list-style: circle;
     padding-left: 1.1em;
 
 }
-
+/*Category type hover*/
 .list-name {
     cursor: pointer;
 }
@@ -49,10 +51,9 @@ form {
 
 }
 
-
+/*buttons*/
 .btn {
     cursor: pointer;
-    background-color: 0;
     border: 0;
     padding: 0;
     color: inherit;
@@ -69,14 +70,14 @@ form {
     opacity: 0.7;
 }
 
-.btn-habit {
+.btn-task {
     font-size: 1.5rem;
     font-weight: 900;
     margin-right: 0.25em;
     transition: opacity 250ms ease-in;
 }
 
-.btn-habit:hover {
+.btn-task:hover {
     opacity: 0.7;
 }
 
@@ -89,7 +90,7 @@ form {
 .btn-delete:hover {
     color: lightcoral;
 }
-
+/* New category styles*/
 .new-category {
     background-color: transparent;
     border: 0;
@@ -112,7 +113,7 @@ form {
     opacity: 0.5;
 }
 
-.new-category .habit{
+.new-category .task{
     margin-bottom: 0;
 }
 
@@ -120,14 +121,15 @@ form {
     font-weight: 700;
 }
 
-.habit-list {
+/*Task List Styles*/
+.task-list {
     --spacer: 2rem;
     display: inline-block;
     background: lightcyan;
     color: black;
 }
 
-.habit-header {
+.task-header {
     background: lightgrey;
     width: 100%;
     padding: var(--spacer);
@@ -137,22 +139,22 @@ form {
     margin: 0;
 }
 
-.habit-count {
+.task-count {
     margin: 0;
     font-size: 1rem;
 }
 
-.habit-body {
+.task-body {
     padding: var(--spacer);
     position: relative;
 }
 
-.new-habit-creator {
+.new-task-creator {
     color: blue;
     margin: 0;
 }
 
-.habit-categoty-title {
+.task-categoty-title {
     margin: 0 1em 0 0;
 }
 
@@ -161,19 +163,19 @@ form {
     position: absolute;
 }
 
-.habit label {
+.task label {
     display: inline-flex;
     align-items: center;
     position: relative;
     
 }
 
-.habit {
+.task {
     position: relative;
     margin-bottom: 1.25em;
 }
 
-.habit::after {
+.task::after {
     content: "";
     position: absolute;
     right: 0;
@@ -183,7 +185,7 @@ form {
     background-color: currentColor;
     opacity: 0.1;
 }
-
+/* Checkbox style*/
 .custom-checkbox{
     --size: 0.75em;
     display: inline-block;
@@ -200,16 +202,16 @@ form {
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
-.habit:hover .custom-checkbox,
+.task:hover .custom-checkbox,
 [type="checkbox"]:focus + label .custom-checkbox {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  color: blue;
+  color: rgba(6, 240, 6, 0.753);;
 }
 
 [type="checkbox"]:checked + label .custom-checkbox {
-  background: blue;
-  border-color: blue;
+  background: rgba(6, 240, 6, 0.753);
+  border-color: rgba(6, 240, 6, 0.753);
   box-shadow: inset 0 0 0px 2px white;
 }
 
@@ -217,7 +219,7 @@ form {
     opacity: 0.5;
 }
 
-.habit label::after {
+.task label::after {
     content: "";
     position: absolute;
     left: 0;
@@ -236,7 +238,8 @@ form {
     transform-origin: left;
 }
 
-.delete-habit {
+/* Delete task and category */
+.delete-task {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
@@ -252,7 +255,7 @@ form {
     height: 40px;
     border: 1px solid #000;
     border-radius: 25px;
-    background: lightgrey;
+    background: white;
 }
 
 .progress-bar-fill{
@@ -263,6 +266,7 @@ form {
 }
 
 .progress-bar-value {
+    color: black;
     position: absolute;
     width: 100%;
     height: 100%;

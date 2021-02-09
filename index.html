@@ -1,83 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habit Tracker</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <header>
-        <div class="container">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Task Tracker</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/style.css">
+      <script defer src="script.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="container">
             <div class="row">
-                <div class="col">
-    <h1 class="title">Task Tracker</h1>
-   </div>
- </div>
-    </div>
-    
-        </header>
-
-
-    <div class="container">
-        <div class="row g-0">
-    <div class="col-md-4 habit-categories">
-        <h2 class="habit-category-title">Habit Type</h2>
-        <ul class="habit-type-list" data-lists>
-            <li class="active-list list-name">Wellbeing</li>
-            <li class="list-name">Work</li>
-            <li class="list-name">Chores</li>
-            <li class="list-name">Health and Exercise</li>
-        </ul>
-
-        <form action= "" data-new-list-form><input type="text" class="new-category" data-new-list-input placeholder="New Habit Type" aria-label="New Habit Type">
-         <button class="btn btn-list" aria-label="Create New Type">+</button>
-        </form>
-        
-    
-    </div>
-    <div class="col-md-8 habit-list" data-list-display-container>
-        <div class="habit-header">
-            <div>
-            <h2 class="habit-title-list" data-list-title>Wellbeing</h2>
-            <p class="habit-count" data-list-count>Three habits remaining</p>
+               <div class="col">
+                  <h1 class="title">Task Tracker</h1>
+               </div>
             </div>
-            <div class="progress-bar">
-        <div class="progress-bar-value">0%</div>
-        <div class="progress-bar-fill"></div>
-    </div>
-        </div>
-        <div class="habit-body">
-        <div class="habits" data-tasks>
-        </div>
-
-        <div class="new-habit-creator">
-            <form action="" data-new-task-form><input type="text" class="new-category" data-new-task-input placeholder="New Habit" aria-label="New Habit">
-            <button class="btn btn-habit" aria-label="Create New Habit">+</button>
-            </form>
-            
-        </div>
-        <div class="delete-habit">
-            <button class="btn btn-delete" data-clear-complete-task-button>Clear Complete Habit</button>
-            <button class="btn btn-delete" data-delete-list-button>Delete Habit</button>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-
-    <template id="task-template">
-      <div class="habit">
-        <input type="checkbox" />
-        <label>
-          <span class="custom-checkbox"></span>
-        </label>
+         </div>
+      </header>
+      <div class="container">
+         <div class="row g-0">
+            <div class="col-md-4 task-categories">
+               <h2 class="task-category-title">Category</h2>
+               <ul class="task-type-list" data-lists>
+                  <li class="active-list list-name"></li>
+                  <li class="list-name"></li>
+                  <li class="list-name"></li>
+                  <li class="list-name"></li>
+               </ul>
+               <form data-new-list-form><input type="text" class="new-category" data-new-list-input placeholder="New task Type" aria-label="New task Type">
+                  <button class="btn btn-list" aria-label="Create New Type">+</button>
+               </form>
+            </div>
+            <div class="col-md-8 task-list" data-list-display-container>
+               <div class="task-header">
+                  <div>
+                     <h2 class="task-title-list" data-list-title></h2>
+                     <p class="task-count" data-list-count></p>
+                  </div>
+                  <div class="progress-bar">
+                     <div class="progress-bar-value">0%</div>
+                     <div class="progress-bar-fill"></div>
+                  </div>
+               </div>
+               <div class="task-body">
+                  <div class="tasks" data-tasks>
+                  </div>
+                  <div class="new-task-creator">
+                     <form data-new-task-form><input type="text" class="new-category" data-new-task-input placeholder="New task" aria-label="New task">
+                        <button class="btn btn-task" aria-label="Create New task">+</button>
+                     </form>
+                  </div>
+                  <div class="delete-task">
+                     <button class="btn btn-delete" data-clear-complete-task-button>Clear Complete Task</button>
+                     <button class="btn btn-delete" data-delete-list-button>Delete Category</button>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-    </template>
-</body>
+      <template id="task-template">
+         <div class="task">
+            <input type="checkbox" />
+            <label>
+            <span class="custom-checkbox"></span>
+            </label>
+         </div>
+      </template>
+   </body>
 </html>

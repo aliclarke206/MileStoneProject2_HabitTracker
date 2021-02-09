@@ -77,14 +77,13 @@ The surface of the site should be clean and simple. As the content is all on one
 * An ability to add links to other apps. For example, if 10,000 steps was a task to be completed, there would be an option to link your FitBit account to allow for seamless and automatic task completion without having to manually check it off. 
 ## Technologies Used
 
-CSS programming language
+1. CSS programming language
 2. HTML programming language
-3. [BootStrap](https://getbootstrap.com/)
+3. Javascript Programming language.
+4. [BootStrap](https://getbootstrap.com/)
 * To create a responsive structure for the website. 
-4. [Balsamiq wireframes](https://balsamiq.com/wireframes/)
+5. [Balsamiq wireframes](https://balsamiq.com/wireframes/)
 * used to create mock ups of what the site will look like
-5. [Fontawesome](https://fontawesome.com/)
-* To create icons for the website
 6. [Google Font](https://fonts.google.com/)
 * Was used to style the fonts used in the website
 7. [Gitpod](https://gitpod.io/workspaces/)
@@ -99,12 +98,14 @@ CSS programming language
 * To validate HTML code
 12. [W3C CSS validator service](https://jigsaw.w3.org/css-validator/validator)
 * To validate CSS code
+13. [Youtube](https://youtube.com)
+* To help with ideals and specific script issues.
 
 ## Testing
 
-The HTML was checked using the 
+The HTML was checked using the [W3C validator Service](https://validator.w3.org/#validate_by_input)
 
-The CSS was checked using the 
+The CSS was checked using the [W3C CSS validator service](https://jigsaw.w3.org/css-validator/validator)
 
 * Clicking on habit checks the check box which helps for mobile device use. 
 * Task changes to tasks plural when task count goes above 1. 
