@@ -68,6 +68,7 @@ listsContainer.addEventListener('click', e => {
   if (e.target.tagName.toLowerCase() === 'li') {
     selectedListId = e.target.dataset.listId
     saveAndRender()
+    const selectedList = lists.find( list => list.id == selectedListId);
     taskProgressBar.setValue(progressPercent(selectedList));
   }
 })   
