@@ -13,7 +13,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
-    background-image: url("background/background-image.jpg");
+    background-image: url("assets/images/background-image.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -150,7 +150,7 @@ form {
 }
 
 .new-task-creator {
-    color: blue;
+    color:inherit;
     margin: 0;
 }
 

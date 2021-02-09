@@ -127,14 +127,14 @@ The project was also tested on multiple browsers (Chrome, Microsoft edge, Intern
 
 
 #### Bugs
-* 
+* The progress bar updates when the selected category is highlighted and works when tasks are checked and unchecked but when a new category is selected it doesnt auto update along with the task count. The page needs to be refreshed again for it to respond to selected list.
 
 ## Deployment
 
 A repository was created on GitHub and Gitpod was used to write the code. The code was commited and pushed to Github regularly to ensure it was saved. The GitHub repository was then deployed to GitHub pages by:
 
 1. Logging into GitHub
-2. Selecting repositories and then Milestone_1
+2. Selecting repositories and then MileStoneProject2_TaskTracker.
 3. Then select settings from the top menu bar.
 4. Under GitHub pages
 5. Under source, select master branch.
