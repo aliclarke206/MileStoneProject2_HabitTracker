@@ -42,7 +42,7 @@ class ProgressBar {
     }
 
     update (){
-        const percentage = progressPercent(selectedList) + "%";
+        const percentage = this.value + "%";
 
         this.fillElem.style.width = percentage;
         this.valueElem.textContent = percentage;
@@ -68,7 +68,7 @@ listsContainer.addEventListener('click', e => {
   if (e.target.tagName.toLowerCase() === 'li') {
     selectedListId = e.target.dataset.listId
     saveAndRender()
-    taskProgressBar.setValue(selectedList);
+    taskProgressBar.setValue(progressPercent(selectedList));
   }
 })   
 //selecting tasks and running associated functions
@@ -79,7 +79,7 @@ tasksContainer.addEventListener('click', e => {
         selectedTask.complete = e.target.checked
         save()
         renderTaskCount(selectedList)
-        taskProgressBar.setValue(progressPercent);
+        taskProgressBar.setValue(progressPercent(selectedList));
         
     }
 })
@@ -152,7 +152,7 @@ function render() {
         renderTaskCount(selectedList)
         clearElement(tasksContainer)
         renderTasks(selectedList);
-        taskProgressBar.setValue(progressPercent);
+        taskProgressBar.setValue(progressPercent(selectedList));
         
     }
 
@@ -175,7 +175,7 @@ function renderTaskCount (selectedList){
         const incompleteTaskCount = selectedList.tasks.filter(task => !task.complete).length
         const taskString = incompleteTaskCount === 1 ? "task" : "tasks"
         listCountElement.innerText = `${incompleteTaskCount} ${taskString} remaining`
-        taskProgressBar.setValue(progressPercent);
+        taskProgressBar.setValue(progressPercent(selectedList));
     }
 //Creates new list item
 function renderLists () {
