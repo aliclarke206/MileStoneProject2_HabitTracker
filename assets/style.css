@@ -130,7 +130,7 @@ form {
 }
 
 .task-header {
-    background: lightgrey;
+    background: linear-gradient(lightgrey, lightcyan);
     width: 100%;
     padding: var(--spacer);
     display: flex;

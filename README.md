@@ -143,10 +143,11 @@ A repository was created on GitHub and Gitpod was used to write the code. The co
 
 ## Credits
 
-### Content
-
 ### Media
+#### Image
 The source for the [Background Image](https://fancycrave.com/free-stock-video-websites/).
 
 ### Acknowledgements
+
+The progress bar was modelled with the help of this [YouTube Video](https://www.youtube.com/watch?v=QxQRtwAtqKE) and significantly modified to fit the styling, sizing and progression of tasks. 
 
