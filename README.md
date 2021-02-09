@@ -142,7 +142,7 @@ The project was also tested on multiple browsers (Chrome, Microsoft edge, Intern
 
 
 #### Bugs
-* The progress bar updates when the selected category is highlighted and works when tasks are checked and unchecked but when a new category is selected it doesnt auto update along with the task count. Once a task is checked or unchecked it updates, but not automatically.
+* The progress bar updates when the selected category is highlighted and works when tasks are checked and unchecked but when a new category is selected it doesnt auto update along with the task count. Once a task is checked or unchecked it updates, but not automatically. But managed to fix it as the varibale selectedList needed to be redefined. 
 
 ## Deployment
 
