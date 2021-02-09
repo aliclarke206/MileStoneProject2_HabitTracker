@@ -146,6 +146,7 @@ A repository was created on GitHub and Gitpod was used to write the code. The co
 ### Content
 
 ### Media
+The source for the [Background Image](https://fancycrave.com/free-stock-video-websites/).
 
 ### Acknowledgements
 
