@@ -103,12 +103,28 @@ The surface of the site should be clean and simple. As the content is all on one
 
 ## Testing
 
-The HTML was checked using the [W3C validator Service](https://validator.w3.org/#validate_by_input)
+The HTML was checked using the [W3C validator Service](https://validator.w3.org/#validate_by_input).
 
-The CSS was checked using the [W3C CSS validator service](https://jigsaw.w3.org/css-validator/validator)
+The CSS was checked using the [W3C CSS validator service](https://jigsaw.w3.org/css-validator/validator).
 
-* Clicking on habit checks the check box which helps for mobile device use. 
-* Task changes to tasks plural when task count goes above 1. 
+Manual testing was carried out to ensure the site carries out the intentions of the user stories.
+On opening the page the category list is clear and visible and when a new category is typed into the form box a new category is created. Multiple categories can be created by continually adding to list.
+A pointer cursor is evident when mouse hovers over categories prompting the user that they are clickable. Also the opacity lowers to highlight the category being hovered over to again prompt the item to be clicked.
+The opacity also lowers when the user attempts to type in the new category form box to encourage the user to add a category.
+When a category is selected the category font weight increases and stays in this highlighted state to signal to the user that this is the category selected.
+When category is selected the corresponding task list appears. User is able to add to task list from form button as many times as they like.
+User is also prompted to enter new tasks as opacity lowers again and the underline transitions.
+When a task is completed it can be checked off and line goes through task item.
+The task counter responds correctly to remaining tasks and the word task changes to plural tasks when a value of more than one is in the count. 
+The progress bar responds correctly to remaining tasks
+The title of the task list changes to correspond with category selected.
+The tasks can be unchecked by re-clicking the tasks
+The clear complete buttons clear any checked tasks
+The delete category button clears the highlighted category
+When page is refreshed all the information has been stored on local storage and is still available 
+The project was also tested on multiple browsers (Chrome, Microsoft edge, Internet Explorer, and Firefox) and device sizes to ensure compatibility and responsiveness.
+
+
 
 #### Bugs
 * 
